@@ -3,7 +3,7 @@ project:
   output-dir: docs
 
 website:
-  title: "[Student xxxx]'s Analytics Lab"
+  title: "Ozbas' Analytics Lab"
   navbar:
     search: true
     left:
@@ -22,11 +22,11 @@ website:
             
     tools:
       - icon: github
-        href: https://twitter.com
+        href: https://github.com/icozbas
       - icon: twitter
-        href: https://twitter.com
+        href: https://twitter.com/icozbas
       - icon: linkedin
-        href: https://linkedin.com
+        href: https://linkedin.com/icozbas
 
   sidebar:
     - title: "Assignments"
@@ -39,7 +39,7 @@ website:
   page-navigation: true
   back-to-top-navigation: true
   page-footer:
-    center: "Hacettepe IE - EMU660 - Spring 2024" 
+    center: "Hacettepe IE - EMU660 - Spring 2025" 
     border: true
 format:
   html:
