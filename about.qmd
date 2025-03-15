@@ -7,34 +7,42 @@ sidebar: false
 
 # Education
 
--   B.S., ................................., ....................................University, Turkey, 20xx - 20xx.
--   M.S., Industrial Engineering, Hacettepe University, Turkey, 20xx - ongoing.
--   Ph.D.., Industrial Engineering, Hacettepe University, Turkey, 20xx - ongoing.
+-   Master of Science, Industrial Engineering, Hacettepe University, Turkey, ongoing.
+
+-   Bachelor of Science, Mechanical Engineering programme of Automotive Engineering, Hacettepe University, Turkey, 2019.
 
 # Work Experience
 
 ## Employements
 
-1.  Firm xxx, position xx, year xxx
+1.  Turkish Aerospace, Lead Logistics Engineer, 04.2021 - now
 
-2.  Firm yyy, position yyy, year yyy
+2.  Bozankaya Automative, Procurement Engineer, 08.2020 - 04.2021
 
-## Internships
+3.  Aygersan Lighting Equipment, Procurement Engineer, 09.2019 - 03.2020
 
-1.  Firm aaa, position xx, year xxx
-
-2.  Firm bbb, position yyy, year yyy
+4.  Mercedes-Benz Türk, Logistics Process Planning Engineer (PEP), 11.2017 - 08.2018
 
 # Projects
 
-1.  TUBİTAK 1001..........................
+1.  Hacettepe University Mechanical Engineering Department Mechatronic Project Contest, 1st place with "3-DoF Cable Robot"
 
-# Publications
-
-1.  Dasdemir, E., Batta, R., Koksalan, M., Tezcaner Ozturk, D. (2022) “UAV Routing for Reconnaissance Mission: A Multi-Objective Orienteering Problem with Time-Dependent Prizes and Multiple Connections”, Computers & Operations Research, 145: 105882.
+2.  Hacettepe University Mechanical Engineering Department Design Project Exhibition, 1st ndefinedplace with "Self Stabilizing Platform"
 
 # Competencies
 
-R, Quarto, Git, Python
+Windows, Mac, Linux Operating Systems
+
+Microsoft Office & Apple iWork
+
+Advanced Excel
+
+SAP, Canias
+
+High hardware and technology knowledge
+
+Capable of learning any program and programming language effectively
 
 # Hobbies
+
+Tennis, Swimming, Consumer Technology
