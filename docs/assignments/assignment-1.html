@@ -265,22 +265,312 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="b-explore-statistical-summaries-with-custom-functions-and-iteration-methods" class="level2">
 <h2 class="anchored" data-anchor-id="b-explore-statistical-summaries-with-custom-functions-and-iteration-methods">(b) Explore Statistical Summaries with Custom Functions and Iteration Methods</h2>
-<pre><code>$mean [1] 20.09062  $median [1] 19.2  $variance [1] 36.3241  $IQR [1] 7.375  $minimum [1] 10.4  $maximum [1] 33.9 </code></pre>
-<pre><code>Statistics for mpg : $mean [1] 20.09062  $median [1] 19.2  $variance [1] 36.3241  $IQR [1] 7.375  $minimum [1] 10.4  $maximum [1] 33.9   Statistics for cyl : $mean [1] 6.1875  $median [1] 6  $variance [1] 3.189516  $IQR [1] 4  $minimum [1] 4  $maximum [1] 8   Statistics for disp : $mean [1] 230.7219  $median [1] 196.3  $variance [1] 15360.8  $IQR [1] 205.175  $minimum [1] 71.1  $maximum [1] 472   Statistics for hp : $mean [1] 146.6875  $median [1] 123  $variance [1] 4700.867  $IQR [1] 83.5  $minimum [1] 52  $maximum [1] 335   Statistics for drat : $mean [1] 3.596563  $median [1] 3.695  $variance [1] 0.2858814  $IQR [1] 0.84  $minimum [1] 2.76  $maximum [1] 4.93   Statistics for wt : $mean [1] 3.21725  $median [1] 3.325  $variance [1] 0.957379  $IQR [1] 1.02875  $minimum [1] 1.513  $maximum [1] 5.424   Statistics for qsec : $mean [1] 17.84875  $median [1] 17.71  $variance [1] 3.193166  $IQR [1] 2.0075  $minimum [1] 14.5  $maximum [1] 22.9   Statistics for vs : $mean [1] 0.4375  $median [1] 0  $variance [1] 0.2540323  $IQR [1] 1  $minimum [1] 0  $maximum [1] 1   Statistics for am : $mean [1] 0.40625  $median [1] 0  $variance [1] 0.2489919  $IQR [1] 1  $minimum [1] 0  $maximum [1] 1   Statistics for gear : $mean [1] 3.6875  $median [1] 4  $variance [1] 0.5443548  $IQR [1] 1  $minimum [1] 3  $maximum [1] 5   Statistics for carb : $mean [1] 2.8125  $median [1] 2  $variance [1] 2.608871  $IQR [1] 2  $minimum [1] 1  $maximum [1] 8 </code></pre>
-<pre><code> mpg      cyl      disp     hp       drat      wt       qsec     mean     20.09062 6.1875   230.7219 146.6875 3.596563  3.21725  17.84875 median   19.2     6        196.3    123      3.695     3.325    17.71    variance 36.3241  3.189516 15360.8  4700.867 0.2858814 0.957379 3.193166 IQR      7.375    4        205.175  83.5     0.84      1.02875  2.0075   minimum  10.4     4        71.1     52       2.76      1.513    14.5     maximum  33.9     8        472      335      4.93      5.424    22.9              vs        am        gear      carb     mean     0.4375    0.40625   3.6875    2.8125   median   0         0         4         2        variance 0.2540323 0.2489919 0.5443548 2.608871 IQR      1         1         1         2        minimum  0         0         3         1        maximum  1         1         5         8       </code></pre>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>compute_stats <span class="ot">&lt;-</span> <span class="cf">function</span>(x) {</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (<span class="sc">!</span><span class="fu">is.numeric</span>(x)) {</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>    <span class="fu">stop</span>(<span class="st">"Input must be a numeric vector."</span>)</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>  stats <span class="ot">&lt;-</span> <span class="fu">list</span>(</span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>    <span class="at">mean =</span> <span class="fu">mean</span>(x, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>    <span class="at">median =</span> <span class="fu">median</span>(x, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>    <span class="at">variance =</span> <span class="fu">var</span>(x, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>    <span class="at">IQR =</span> <span class="fu">IQR</span>(x, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>    <span class="at">minimum =</span> <span class="fu">min</span>(x, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>    <span class="at">maximum =</span> <span class="fu">max</span>(x, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(stats)</span>
+<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-19"><a href="#cb3-19" aria-hidden="true" tabindex="-1"></a><span class="fu">data</span>(mtcars)</span>
+<span id="cb3-20"><a href="#cb3-20" aria-hidden="true" tabindex="-1"></a><span class="fu">compute_stats</span>(mtcars<span class="sc">$</span>mpg)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>$mean
+[1] 20.09062
+
+$median
+[1] 19.2
+
+$variance
+[1] 36.3241
+
+$IQR
+[1] 7.375
+
+$minimum
+[1] 10.4
+
+$maximum
+[1] 33.9</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (col <span class="cf">in</span> <span class="fu">names</span>(mtcars)) {</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (<span class="fu">is.numeric</span>(mtcars[[col]])) {</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>    <span class="fu">cat</span>(<span class="st">"Statistics for"</span>, col, <span class="st">":</span><span class="sc">\n</span><span class="st">"</span>)</span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>    stats <span class="ot">&lt;-</span> <span class="fu">compute_stats</span>(mtcars[[col]])</span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>    <span class="fu">print</span>(stats)</span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>    <span class="fu">cat</span>(<span class="st">"</span><span class="sc">\n</span><span class="st">"</span>)</span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Statistics for mpg :
+$mean
+[1] 20.09062
+
+$median
+[1] 19.2
+
+$variance
+[1] 36.3241
+
+$IQR
+[1] 7.375
+
+$minimum
+[1] 10.4
+
+$maximum
+[1] 33.9
+
+
+Statistics for cyl :
+$mean
+[1] 6.1875
+
+$median
+[1] 6
+
+$variance
+[1] 3.189516
+
+$IQR
+[1] 4
+
+$minimum
+[1] 4
+
+$maximum
+[1] 8
+
+
+Statistics for disp :
+$mean
+[1] 230.7219
+
+$median
+[1] 196.3
+
+$variance
+[1] 15360.8
+
+$IQR
+[1] 205.175
+
+$minimum
+[1] 71.1
+
+$maximum
+[1] 472
+
+
+Statistics for hp :
+$mean
+[1] 146.6875
+
+$median
+[1] 123
+
+$variance
+[1] 4700.867
+
+$IQR
+[1] 83.5
+
+$minimum
+[1] 52
+
+$maximum
+[1] 335
+
+
+Statistics for drat :
+$mean
+[1] 3.596563
+
+$median
+[1] 3.695
+
+$variance
+[1] 0.2858814
+
+$IQR
+[1] 0.84
+
+$minimum
+[1] 2.76
+
+$maximum
+[1] 4.93
+
+
+Statistics for wt :
+$mean
+[1] 3.21725
+
+$median
+[1] 3.325
+
+$variance
+[1] 0.957379
+
+$IQR
+[1] 1.02875
+
+$minimum
+[1] 1.513
+
+$maximum
+[1] 5.424
+
+
+Statistics for qsec :
+$mean
+[1] 17.84875
+
+$median
+[1] 17.71
+
+$variance
+[1] 3.193166
+
+$IQR
+[1] 2.0075
+
+$minimum
+[1] 14.5
+
+$maximum
+[1] 22.9
+
+
+Statistics for vs :
+$mean
+[1] 0.4375
+
+$median
+[1] 0
+
+$variance
+[1] 0.2540323
+
+$IQR
+[1] 1
+
+$minimum
+[1] 0
+
+$maximum
+[1] 1
+
+
+Statistics for am :
+$mean
+[1] 0.40625
+
+$median
+[1] 0
+
+$variance
+[1] 0.2489919
+
+$IQR
+[1] 1
+
+$minimum
+[1] 0
+
+$maximum
+[1] 1
+
+
+Statistics for gear :
+$mean
+[1] 3.6875
+
+$median
+[1] 4
+
+$variance
+[1] 0.5443548
+
+$IQR
+[1] 1
+
+$minimum
+[1] 3
+
+$maximum
+[1] 5
+
+
+Statistics for carb :
+$mean
+[1] 2.8125
+
+$median
+[1] 2
+
+$variance
+[1] 2.608871
+
+$IQR
+[1] 2
+
+$minimum
+[1] 1
+
+$maximum
+[1] 8</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>stats_list <span class="ot">&lt;-</span> <span class="fu">sapply</span>(mtcars, <span class="cf">function</span>(col) {</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (<span class="fu">is.numeric</span>(col)) {</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>    <span class="fu">compute_stats</span>(col)</span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>})</span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>stats_list</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>         mpg      cyl      disp     hp       drat      wt       qsec    
+mean     20.09062 6.1875   230.7219 146.6875 3.596563  3.21725  17.84875
+median   19.2     6        196.3    123      3.695     3.325    17.71   
+variance 36.3241  3.189516 15360.8  4700.867 0.2858814 0.957379 3.193166
+IQR      7.375    4        205.175  83.5     0.84      1.02875  2.0075  
+minimum  10.4     4        71.1     52       2.76      1.513    14.5    
+maximum  33.9     8        472      335      4.93      5.424    22.9    
+         vs        am        gear      carb    
+mean     0.4375    0.40625   3.6875    2.8125  
+median   0         0         4         2       
+variance 0.2540323 0.2489919 0.5443548 2.608871
+IQR      1         1         1         2       
+minimum  0         0         3         1       
+maximum  1         1         5         8       </code></pre>
+</div>
+</div>
 </section>
 <section id="c-load-the-na_example-dataset-from-the-dslabs-package" class="level2">
 <h2 class="anchored" data-anchor-id="c-load-the-na_example-dataset-from-the-dslabs-package">(c) Load the “na_example” dataset from the dslabs package</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dslabs)</span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="fu">data</span>(na_example)</span>
-<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(<span class="st">"Original Dataset with NAs:"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dslabs)</span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a><span class="fu">data</span>(na_example)</span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(<span class="st">"Original Dataset with NAs:"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] "Original Dataset with NAs:"</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(na_example)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(na_example)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>   [1]  2  1  3  2  1  3  1  4  3  2  2 NA  2  2  1  4 NA  1  1  2  1  2  2  1
   [25]  2  5 NA  2  2  3  1  2  4  1  1  1  4  5  2  3  4  1  2  4  1  1  2  1
@@ -324,6 +614,82 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
  [937]  4  3 NA  1  1  1 NA  4  3  5  1  1  2 NA  2  2  2  2  5  2  2  3  1  2
  [961]  3 NA  1  2 NA NA  2 NA  3  1  1  2  5  3  5  1  1  4 NA  2  1  3  1  1
  [985]  2  4  3  3  3 NA  1  1  2  2  1  1  2  2 NA  2</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>na_count <span class="ot">&lt;-</span> <span class="fu">sum</span>(<span class="fu">is.na</span>(na_example))</span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>na_positions <span class="ot">&lt;-</span> <span class="fu">which</span>(<span class="fu">is.na</span>(na_example), <span class="at">arr.ind =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">"Total number of NAs:"</span>, na_count, <span class="st">"</span><span class="sc">\n</span><span class="st">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Total number of NAs: 145 </code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">"Index positions of NAs:</span><span class="sc">\n</span><span class="st">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Index positions of NAs:</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(na_positions)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>  [1]  12  17  27  50  51  52  59  65  66  68  91 117 125 126 127 128 139 140
+ [19] 141 142 153 158 168 169 172 179 189 190 203 205 207 208 212 214 237 241
+ [37] 243 244 253 257 265 267 269 279 282 287 290 298 310 325 326 330 341 348
+ [55] 361 374 392 395 397 407 410 437 443 446 461 468 470 490 496 505 527 536
+ [73] 539 553 561 576 578 589 599 603 609 616 618 620 630 633 636 641 652 653
+ [91] 666 667 668 677 680 687 691 695 701 726 734 735 736 745 746 747 748 751
+[109] 756 762 767 788 789 807 821 826 832 838 843 844 845 849 850 853 859 869
+[127] 887 892 893 906 909 911 918 924 925 939 943 950 962 965 966 968 979 990
+[145] 999</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>mean_original <span class="ot">&lt;-</span> <span class="fu">mean</span>(na_example, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a>sd_original <span class="ot">&lt;-</span> <span class="fu">sd</span>(na_example, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-4"><a href="#cb19-4" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">"Mean of the original dataset (ignoring NAs):"</span>, mean_original, <span class="st">"</span><span class="sc">\n</span><span class="st">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Mean of the original dataset (ignoring NAs): 2.301754 </code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">"Standard deviation of the original dataset (ignoring NAs):"</span>, sd_original, <span class="st">"</span><span class="sc">\n</span><span class="st">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Standard deviation of the original dataset (ignoring NAs): 1.22338 </code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a>na_example_version1 <span class="ot">&lt;-</span> na_example</span>
+<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a>na_example_version1[<span class="fu">is.na</span>(na_example_version1)] <span class="ot">&lt;-</span> <span class="fu">median</span>(na_example_version1, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb23-3"><a href="#cb23-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb23-4"><a href="#cb23-4" aria-hidden="true" tabindex="-1"></a>na_example_version2 <span class="ot">&lt;-</span> na_example</span>
+<span id="cb23-5"><a href="#cb23-5" aria-hidden="true" tabindex="-1"></a>non_na_values <span class="ot">&lt;-</span> na_example[<span class="sc">!</span><span class="fu">is.na</span>(na_example)]</span>
+<span id="cb23-6"><a href="#cb23-6" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">123</span>)  <span class="co"># For reproducibility</span></span>
+<span id="cb23-7"><a href="#cb23-7" aria-hidden="true" tabindex="-1"></a>na_example_version2[<span class="fu">is.na</span>(na_example_version2)] <span class="ot">&lt;-</span> <span class="fu">sample</span>(non_na_values, <span class="at">size =</span> <span class="fu">sum</span>(<span class="fu">is.na</span>(na_example_version2)), <span class="at">replace =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb23-8"><a href="#cb23-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb23-9"><a href="#cb23-9" aria-hidden="true" tabindex="-1"></a>mean_version1 <span class="ot">&lt;-</span> <span class="fu">mean</span>(na_example_version1, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb23-10"><a href="#cb23-10" aria-hidden="true" tabindex="-1"></a>sd_version1 <span class="ot">&lt;-</span> <span class="fu">sd</span>(na_example_version1, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb23-11"><a href="#cb23-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb23-12"><a href="#cb23-12" aria-hidden="true" tabindex="-1"></a>mean_version2 <span class="ot">&lt;-</span> <span class="fu">mean</span>(na_example_version2, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb23-13"><a href="#cb23-13" aria-hidden="true" tabindex="-1"></a>sd_version2 <span class="ot">&lt;-</span> <span class="fu">sd</span>(na_example_version2, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb23-14"><a href="#cb23-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb23-15"><a href="#cb23-15" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">"Mean of Version 1 (with median substitution):"</span>, mean_version1, <span class="st">"</span><span class="sc">\n</span><span class="st">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Mean of Version 1 (with median substitution): 2.258 </code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb25"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">"Standard deviation of Version 1 (with median substitution):"</span>, sd_version1, <span class="st">"</span><span class="sc">\n</span><span class="st">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Standard deviation of Version 1 (with median substitution): 1.136102 </code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb27"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">"Mean of Version 2 (with random substitution):"</span>, mean_version2, <span class="st">"</span><span class="sc">\n</span><span class="st">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Mean of Version 2 (with random substitution): 2.286 </code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb29"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">"Standard deviation of Version 2 (with random substitution):"</span>, sd_version2, <span class="st">"</span><span class="sc">\n</span><span class="st">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Standard deviation of Version 2 (with random substitution): 1.213951 </code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb31"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">"Comparison of Statistics (Before and After Handling Missing Values):</span><span class="sc">\n</span><span class="st">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Comparison of Statistics (Before and After Handling Missing Values):</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb33"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">"Original Mean:"</span>, mean_original, <span class="st">" Version 1 Mean:"</span>, mean_version1, <span class="st">" Version 2 Mean:"</span>, mean_version2, <span class="st">"</span><span class="sc">\n</span><span class="st">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Original Mean: 2.301754  Version 1 Mean: 2.258  Version 2 Mean: 2.286 </code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb35"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">"Original SD:"</span>, sd_original, <span class="st">" Version 1 SD:"</span>, sd_version1, <span class="st">" Version 2 SD:"</span>, sd_version2, <span class="st">"</span><span class="sc">\n</span><span class="st">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Original SD: 1.22338  Version 1 SD: 1.136102  Version 2 SD: 1.213951 </code></pre>
 </div>
 </div>
 

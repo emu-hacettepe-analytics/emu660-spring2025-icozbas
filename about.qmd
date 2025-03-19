@@ -49,4 +49,4 @@ Tennis, Swimming, Consumer Technology
 
 # CV
 
-[Ozbas' Resume](https://emu-hacettepe-analytics.github.io/emu660-spring2025-icozbas/assets/CV_icozbas-ENG-expl.pdf)
+[Download CV](assets/CV_icozbas-ENG-expl.pdf)
