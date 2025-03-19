@@ -2,12 +2,6 @@
 title: "Assignment 1"
 ---
 
-# Assignment 1
-
-```{r}
-1 + 1
-```
-
 My first assignment has two parts.
 
 ## (a) [Veri Bilimi ve Endüstri Mühendisliği Üzerine Sohbetler - Cem Vardar & Erdi Dasdemir](https://www.youtube.com/watch?v=Fi8-phj1X1A)
@@ -70,28 +64,26 @@ library(dslabs)
 
 data(na_example)
 
-print("Original Dataset with NAs:")
 print(na_example)
 
 na_count <- sum(is.na(na_example))
 na_positions <- which(is.na(na_example), arr.ind = TRUE)
 
-cat("Total number of NAs:", na_count, "\n")
-cat("Index positions of NAs:\n")
+print(na_count)
 print(na_positions)
 
 mean_original <- mean(na_example, na.rm = TRUE)
 sd_original <- sd(na_example, na.rm = TRUE)
 
-cat("Mean of the original dataset (ignoring NAs):", mean_original, "\n")
-cat("Standard deviation of the original dataset (ignoring NAs):", sd_original, "\n")
+print(mean_original)
+print(sd_original)
 
 na_example_version1 <- na_example
 na_example_version1[is.na(na_example_version1)] <- median(na_example_version1, na.rm = TRUE)
 
 na_example_version2 <- na_example
 non_na_values <- na_example[!is.na(na_example)]
-set.seed(123)  # For reproducibility
+set.seed(123)
 na_example_version2[is.na(na_example_version2)] <- sample(non_na_values, size = sum(is.na(na_example_version2)), replace = TRUE)
 
 mean_version1 <- mean(na_example_version1, na.rm = TRUE)
@@ -100,15 +92,11 @@ sd_version1 <- sd(na_example_version1, na.rm = TRUE)
 mean_version2 <- mean(na_example_version2, na.rm = TRUE)
 sd_version2 <- sd(na_example_version2, na.rm = TRUE)
 
-cat("Mean of Version 1 (with median substitution):", mean_version1, "\n")
-cat("Standard deviation of Version 1 (with median substitution):", sd_version1, "\n")
+print(mean_version1)
+print(sd_version1)
 
-cat("Mean of Version 2 (with random substitution):", mean_version2, "\n")
-cat("Standard deviation of Version 2 (with random substitution):", sd_version2, "\n")
-
-cat("Comparison of Statistics (Before and After Handling Missing Values):\n")
-cat("Original Mean:", mean_original, " Version 1 Mean:", mean_version1, " Version 2 Mean:", mean_version2, "\n")
-cat("Original SD:", sd_original, " Version 1 SD:", sd_version1, " Version 2 SD:", sd_version2, "\n")
+print(mean_version2)
+print(sd_version2)
 ```
 
-
+In both versions where we imputed the missing data, an improvement in the standard deviation was observed. However, we found that the first version, where we added the median, provided more consistent results.
