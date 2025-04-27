@@ -1,113 +1,5 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Welcome to My Analytics Lab",
-    "section": "",
-    "text": "Hello! My name is Izzet Can Ozbas.\nThis is my personal webpage.\nPlease stay tuned to follow my works on data analytics, blog posts, and more.\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "project.html",
-    "href": "project.html",
-    "title": "Project X",
-    "section": "",
-    "text": "Welcome to my/our project page.\nKeep an eye on this space to stay updated with my project activities.\n(The titles below are provided as examples; please feel free to adjust them as necessary.)"
-  },
-  {
-    "objectID": "project.html#data-source",
-    "href": "project.html#data-source",
-    "title": "Project X",
-    "section": "2.1 Data Source",
-    "text": "2.1 Data Source\nxxxxxx"
-  },
-  {
-    "objectID": "project.html#general-information-about-data",
-    "href": "project.html#general-information-about-data",
-    "title": "Project X",
-    "section": "2.2 General Information About Data",
-    "text": "2.2 General Information About Data\nxxxxxx"
-  },
-  {
-    "objectID": "project.html#reason-of-choice",
-    "href": "project.html#reason-of-choice",
-    "title": "Project X",
-    "section": "2.3 Reason of Choice",
-    "text": "2.3 Reason of Choice\nxxxxxx"
-  },
-  {
-    "objectID": "project.html#preprocessing",
-    "href": "project.html#preprocessing",
-    "title": "Project X",
-    "section": "2.4 Preprocessing",
-    "text": "2.4 Preprocessing\nxxxxxx"
-  },
-  {
-    "objectID": "project.html#exploratory-data-analysis",
-    "href": "project.html#exploratory-data-analysis",
-    "title": "Project X",
-    "section": "3.1 Exploratory Data Analysis",
-    "text": "3.1 Exploratory Data Analysis\nxxxxxx"
-  },
-  {
-    "objectID": "project.html#trend-analysis",
-    "href": "project.html#trend-analysis",
-    "title": "Project X",
-    "section": "3.2 Trend Analysis",
-    "text": "3.2 Trend Analysis\nxxxxxx"
-  },
-  {
-    "objectID": "project.html#model-fitting",
-    "href": "project.html#model-fitting",
-    "title": "Project X",
-    "section": "3.3 Model Fitting",
-    "text": "3.3 Model Fitting\nxxxxxx"
-  },
-  {
-    "objectID": "project.html#results",
-    "href": "project.html#results",
-    "title": "Project X",
-    "section": "3.4 Results",
-    "text": "3.4 Results\nxxxxxx"
-  },
-  {
-    "objectID": "assignments.html",
-    "href": "assignments.html",
-    "title": "My Assignments",
-    "section": "",
-    "text": "On this page, I showcase the assignment I conducted for the [term and year, e.g. Spring 2024-2025] EMU660 Decision Making with Analytics course.\nPlease use left menu to navigate through my assignments.\n\n\n\n Back to top",
-    "crumbs": [
-      "My Assignments"
-    ]
-  },
-  {
-    "objectID": "about.html#employements",
-    "href": "about.html#employements",
-    "title": "About Me",
-    "section": "Employements",
-    "text": "Employements\n\nTurkish Aerospace, Lead Logistics Engineer, 04.2021 - now\nBozankaya Automative, Procurement Engineer, 08.2020 - 04.2021\nAygersan Lighting Equipment, Procurement Engineer, 09.2019 - 03.2020\nMercedes-Benz Türk, Logistics Process Planning Engineer (PEP), 11.2017 - 08.2018"
-  },
-  {
-    "objectID": "about.html#internships",
-    "href": "about.html#internships",
-    "title": "About Me",
-    "section": "Internships",
-    "text": "Internships\n\nFirm aaa, position xx, year xxx\nFirm bbb, position yyy, year yyy"
-  },
-  {
-    "objectID": "posts.html",
-    "href": "posts.html",
-    "title": "My Blog",
-    "section": "",
-    "text": "This page is under construction.\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "docs/assignments/assignment-1.html",
-    "href": "docs/assignments/assignment-1.html",
-    "title": "Assignment 1",
-    "section": "",
-    "text": "1 + 1\n\n[1] 2\n\n\nMy first assignment has two parts."
-  },
-  {
     "objectID": "assignments/assignment-1.html",
     "href": "assignments/assignment-1.html",
     "title": "Assignment 1",
@@ -118,38 +10,11 @@
     ]
   },
   {
-    "objectID": "assignments/assignment-2.html",
-    "href": "assignments/assignment-2.html",
-    "title": "Assignment 2",
-    "section": "",
-    "text": "Assignment 2\n\n1 + 1\n\n[1] 2\n\n\n\n\n\n\n Back to top",
-    "crumbs": [
-      "Assignment 2"
-    ]
-  },
-  {
-    "objectID": "assignments-1.html",
-    "href": "assignments-1.html",
-    "title": "Assignment 1",
-    "section": "",
-    "text": "On this page, I showcase the assignment I conducted for the [term and year, e.g. Spring 2024-2025] EMU660 Decision Making with Analytics course.\nPlease use left menu to navigate through my assignments.\n\n\n\n Back to top"
-  },
-  {
     "objectID": "assignments/assignment-1.html#a-veri-bilimi-ve-endüstri-mühendisliği-üzerine-sohbetler---cem-vardar-erdi-dasdemir",
     "href": "assignments/assignment-1.html#a-veri-bilimi-ve-endüstri-mühendisliği-üzerine-sohbetler---cem-vardar-erdi-dasdemir",
     "title": "Assignment 1",
     "section": "(a) Veri Bilimi ve Endüstri Mühendisliği Üzerine Sohbetler - Cem Vardar & Erdi Dasdemir",
     "text": "(a) Veri Bilimi ve Endüstri Mühendisliği Üzerine Sohbetler - Cem Vardar & Erdi Dasdemir\nMr. Vardar, an experienced industrial engineer and data scientist, discusses how data science and industrial engineering integrated with each other, emphasizing that data analytics is a key problem-solving tool.\nHe highlights that simple solutions are often the most effective in complex systems. While complexity may be necessary, solutions should start with a structured, simple approach.\nMr. Vardar also explains various data science roles, their responsibilities, and the essential skills needed in the field. He introduces the Pareto Principle (80-20 rule), suggesting that learning just 20% of key skills (like SQL, programming, and data visualization) can meet 80% of an industrial engineer’s needs.\nThe talk concludes with career advice, book recommendations, and an interactive Q&A session on industry trends and best practices.",
-    "crumbs": [
-      "Assignment 1"
-    ]
-  },
-  {
-    "objectID": "assignments/assignment-1.html#b",
-    "href": "assignments/assignment-1.html#b",
-    "title": "Assignment 1",
-    "section": "",
-    "text": "$mean [1] 20.09062  $median [1] 19.2  $variance [1] 36.3241  $IQR [1] 7.375  $minimum [1] 10.4  $maximum [1] 33.9 \nStatistics for mpg : $mean [1] 20.09062  $median [1] 19.2  $variance [1] 36.3241  $IQR [1] 7.375  $minimum [1] 10.4  $maximum [1] 33.9   Statistics for cyl : $mean [1] 6.1875  $median [1] 6  $variance [1] 3.189516  $IQR [1] 4  $minimum [1] 4  $maximum [1] 8   Statistics for disp : $mean [1] 230.7219  $median [1] 196.3  $variance [1] 15360.8  $IQR [1] 205.175  $minimum [1] 71.1  $maximum [1] 472   Statistics for hp : $mean [1] 146.6875  $median [1] 123  $variance [1] 4700.867  $IQR [1] 83.5  $minimum [1] 52  $maximum [1] 335   Statistics for drat : $mean [1] 3.596563  $median [1] 3.695  $variance [1] 0.2858814  $IQR [1] 0.84  $minimum [1] 2.76  $maximum [1] 4.93   Statistics for wt : $mean [1] 3.21725  $median [1] 3.325  $variance [1] 0.957379  $IQR [1] 1.02875  $minimum [1] 1.513  $maximum [1] 5.424   Statistics for qsec : $mean [1] 17.84875  $median [1] 17.71  $variance [1] 3.193166  $IQR [1] 2.0075  $minimum [1] 14.5  $maximum [1] 22.9   Statistics for vs : $mean [1] 0.4375  $median [1] 0  $variance [1] 0.2540323  $IQR [1] 1  $minimum [1] 0  $maximum [1] 1   Statistics for am : $mean [1] 0.40625  $median [1] 0  $variance [1] 0.2489919  $IQR [1] 1  $minimum [1] 0  $maximum [1] 1   Statistics for gear : $mean [1] 3.6875  $median [1] 4  $variance [1] 0.5443548  $IQR [1] 1  $minimum [1] 3  $maximum [1] 5   Statistics for carb : $mean [1] 2.8125  $median [1] 2  $variance [1] 2.608871  $IQR [1] 2  $minimum [1] 1  $maximum [1] 8 \n mpg      cyl      disp     hp       drat      wt       qsec     mean     20.09062 6.1875   230.7219 146.6875 3.596563  3.21725  17.84875 median   19.2     6        196.3    123      3.695     3.325    17.71    variance 36.3241  3.189516 15360.8  4700.867 0.2858814 0.957379 3.193166 IQR      7.375    4        205.175  83.5     0.84      1.02875  2.0075   minimum  10.4     4        71.1     52       2.76      1.513    14.5     maximum  33.9     8        472      335      4.93      5.424    22.9              vs        am        gear      carb     mean     0.4375    0.40625   3.6875    2.8125   median   0         0         4         2        variance 0.2540323 0.2489919 0.5443548 2.608871 IQR      1         1         1         2        minimum  0         0         3         1        maximum  1         1         5         8",
     "crumbs": [
       "Assignment 1"
     ]
@@ -169,9 +34,86 @@
     "href": "assignments/assignment-1.html#c-load-the-na_example-dataset-from-the-dslabs-package",
     "title": "Assignment 1",
     "section": "(c) Load the “na_example” dataset from the dslabs package",
-    "text": "(c) Load the “na_example” dataset from the dslabs package\n\nlibrary(dslabs)\n\ndata(na_example)\n\nprint(na_example)\n\n   [1]  2  1  3  2  1  3  1  4  3  2  2 NA  2  2  1  4 NA  1  1  2  1  2  2  1\n  [25]  2  5 NA  2  2  3  1  2  4  1  1  1  4  5  2  3  4  1  2  4  1  1  2  1\n  [49]  5 NA NA NA  1  1  5  1  3  1 NA  4  4  7  3  2 NA NA  1 NA  4  1  2  2\n  [73]  3  2  1  2  2  4  3  4  2  3  1  3  2  1  1  1  3  1 NA  3  1  2  2  1\n  [97]  2  2  1  1  4  1  1  2  3  3  2  2  3  3  3  4  1  1  1  2 NA  4  3  4\n [121]  3  1  2  1 NA NA NA NA  1  5  1  2  1  3  5  3  2  2 NA NA NA NA  3  5\n [145]  3  1  1  4  2  4  3  3 NA  2  3  2  6 NA  1  1  2  2  1  3  1  1  5 NA\n [169] NA  2  4 NA  2  5  1  4  3  3 NA  4  3  1  4  1  1  3  1  1 NA NA  3  5\n [193]  2  2  2  3  1  2  2  3  2  1 NA  2 NA  1 NA NA  2  1  1 NA  3 NA  1  2\n [217]  2  1  3  2  2  1  1  2  3  1  1  1  4  3  4  2  2  1  4  1 NA  5  1  4\n [241] NA  3 NA NA  1  1  5  2  3  3  2  4 NA  3  2  5 NA  2  3  4  6  2  2  2\n [265] NA  2 NA  2 NA  3  3  2  2  4  3  1  4  2 NA  2  4 NA  6  2  3  1 NA  2\n [289]  2 NA  1  1  3  2  3  3  1 NA  1  4  2  1  1  3  2  1  2  3  1 NA  2  3\n [313]  3  2  1  2  3  5  5  1  2  3  3  1 NA NA  1  2  4 NA  2  1  1  1  3  2\n [337]  1  1  3  4 NA  1  2  1  1  3  3 NA  1  1  3  5  3  2  3  4  1  4  3  1\n [361] NA  2  1  2  2  1  2  2  6  1  2  4  5 NA  3  4  2  1  1  4  2  1  1  1\n [385]  1  2  1  4  4  1  3 NA  3  3 NA  2 NA  1  2  1  1  4  2  1  4  4 NA  1\n [409]  2 NA  3  2  2  2  1  4  3  6  1  2  3  1  3  2  2  2  1  1  3  2  1  1\n [433]  1  3  2  2 NA  4  4  4  1  1 NA  4  3 NA  1  3  1  3  2  4  2  2  2  3\n [457]  2  1  4  3 NA  1  4  3  1  3  2 NA  3 NA  1  3  1  4  1  1  1  2  4  3\n [481]  1  2  2  2  3  2  3  1  1 NA  3  2  1  1  2 NA  2  2  2  3  3  1  1  2\n [505] NA  1  2  1  1  3  3  1  3  1  1  1  1  1  2  5  1  1  2  2  1  1 NA  1\n [529]  4  1  2  4  1  3  2 NA  1  1 NA  2  1  1  4  2  3  3  1  5  3  1  1  2\n [553] NA  1  1  3  1  3  2  4 NA  2  3  2  1  2  1  1  1  2  2  3  1  5  2 NA\n [577]  2 NA  3  2  2  2  1  5  3  2  3  1 NA  3  1  2  2  2  1  2  2  4 NA  6\n [601]  1  2 NA  1  1  2  2  3 NA  3  2  3  3  4  2 NA  2 NA  4 NA  1  1  2  2\n [625]  3  1  1  1  3 NA  2  5 NA  7  1 NA  4  3  3  1 NA  1  1  1  1  3  2  4\n [649]  2  2  3 NA NA  1  4  3  2  2  2  3  2  4  2  2  4 NA NA NA  6  3  3  1\n [673]  4  4  2  1 NA  1  6 NA  3  3  2  1  1  6 NA  1  5  1 NA  2  6  2 NA  4\n [697]  1  3  1  2 NA  1  1  3  1  2  4  2  1  3  2  4  3  2  2  1  1  5  6  4\n [721]  2  2  2  2  4 NA  1  2  2  2  2  4  5 NA NA NA  4  3  3  3  2  4  2  4\n [745] NA NA NA NA  2  1 NA  2  4  3  2 NA  2  3  1  3  4 NA  1  2  1  2 NA  3\n [769]  1  2  1  2  1  2  1  2  2  2  2  1  1  3  3  1  3  4  3 NA NA  4  2  3\n [793]  2  1  3  2  4  2  2  3  1  2  4  3  3  4 NA  1  4  2  1  1  1  3  1  5\n [817]  2  2  4  2 NA  1  3  1  2 NA  1  2  1  2  1 NA  1  3  2  3  2 NA  2  1\n [841]  4  2 NA NA NA  2  4  2 NA NA  3  1 NA  5  5  2  2  2 NA  2  1  3  1  3\n [865]  2  4  2  4 NA  4  1  2  3  2  3  3  2  3  2  2  2  1  3  2  4  2 NA  3\n [889]  3  2  2 NA NA  3  2  1  2  4  1  1  1  1  4  3  2 NA  3  2 NA  1 NA  3\n [913]  2  1  1  1  2 NA  2  2  3  3  2 NA NA  4  5  2  2  2  1  2  3  1  3  3\n [937]  4  3 NA  1  1  1 NA  4  3  5  1  1  2 NA  2  2  2  2  5  2  2  3  1  2\n [961]  3 NA  1  2 NA NA  2 NA  3  1  1  2  5  3  5  1  1  4 NA  2  1  3  1  1\n [985]  2  4  3  3  3 NA  1  1  2  2  1  1  2  2 NA  2\n\nna_count &lt;- sum(is.na(na_example))\nna_positions &lt;- which(is.na(na_example), arr.ind = TRUE)\n\nprint(na_count)\n\n[1] 145\n\nprint(na_positions)\n\n  [1]  12  17  27  50  51  52  59  65  66  68  91 117 125 126 127 128 139 140\n [19] 141 142 153 158 168 169 172 179 189 190 203 205 207 208 212 214 237 241\n [37] 243 244 253 257 265 267 269 279 282 287 290 298 310 325 326 330 341 348\n [55] 361 374 392 395 397 407 410 437 443 446 461 468 470 490 496 505 527 536\n [73] 539 553 561 576 578 589 599 603 609 616 618 620 630 633 636 641 652 653\n [91] 666 667 668 677 680 687 691 695 701 726 734 735 736 745 746 747 748 751\n[109] 756 762 767 788 789 807 821 826 832 838 843 844 845 849 850 853 859 869\n[127] 887 892 893 906 909 911 918 924 925 939 943 950 962 965 966 968 979 990\n[145] 999\n\nmean_original &lt;- mean(na_example, na.rm = TRUE)\nsd_original &lt;- sd(na_example, na.rm = TRUE)\n\nprint(mean_original)\n\n[1] 2.301754\n\nprint(sd_original)\n\n[1] 1.22338\n\nna_example_version1 &lt;- na_example\nna_example_version1[is.na(na_example_version1)] &lt;- median(na_example_version1, na.rm = TRUE)\n\nna_example_version2 &lt;- na_example\nnon_na_values &lt;- na_example[!is.na(na_example)]\nset.seed(123)\nna_example_version2[is.na(na_example_version2)] &lt;- sample(non_na_values, size = sum(is.na(na_example_version2)), replace = TRUE)\n\nmean_version1 &lt;- mean(na_example_version1, na.rm = TRUE)\nsd_version1 &lt;- sd(na_example_version1, na.rm = TRUE)\n\nmean_version2 &lt;- mean(na_example_version2, na.rm = TRUE)\nsd_version2 &lt;- sd(na_example_version2, na.rm = TRUE)\n\nprint(mean_version1)\n\n[1] 2.258\n\nprint(sd_version1)\n\n[1] 1.136102\n\nprint(mean_version2)\n\n[1] 2.286\n\nprint(sd_version2)\n\n[1] 1.213951\n\n\nIn both versions where we imputed the missing data, an improvement in the standard deviation was observed. However, we found that the first version, where we added the median, provided more consistent results.",
+    "text": "(c) Load the “na_example” dataset from the dslabs package\n\nlibrary(dslabs)\n\nWarning: package 'dslabs' was built under R version 4.3.3\n\ndata(na_example)\n\nprint(na_example)\n\n   [1]  2  1  3  2  1  3  1  4  3  2  2 NA  2  2  1  4 NA  1  1  2  1  2  2  1\n  [25]  2  5 NA  2  2  3  1  2  4  1  1  1  4  5  2  3  4  1  2  4  1  1  2  1\n  [49]  5 NA NA NA  1  1  5  1  3  1 NA  4  4  7  3  2 NA NA  1 NA  4  1  2  2\n  [73]  3  2  1  2  2  4  3  4  2  3  1  3  2  1  1  1  3  1 NA  3  1  2  2  1\n  [97]  2  2  1  1  4  1  1  2  3  3  2  2  3  3  3  4  1  1  1  2 NA  4  3  4\n [121]  3  1  2  1 NA NA NA NA  1  5  1  2  1  3  5  3  2  2 NA NA NA NA  3  5\n [145]  3  1  1  4  2  4  3  3 NA  2  3  2  6 NA  1  1  2  2  1  3  1  1  5 NA\n [169] NA  2  4 NA  2  5  1  4  3  3 NA  4  3  1  4  1  1  3  1  1 NA NA  3  5\n [193]  2  2  2  3  1  2  2  3  2  1 NA  2 NA  1 NA NA  2  1  1 NA  3 NA  1  2\n [217]  2  1  3  2  2  1  1  2  3  1  1  1  4  3  4  2  2  1  4  1 NA  5  1  4\n [241] NA  3 NA NA  1  1  5  2  3  3  2  4 NA  3  2  5 NA  2  3  4  6  2  2  2\n [265] NA  2 NA  2 NA  3  3  2  2  4  3  1  4  2 NA  2  4 NA  6  2  3  1 NA  2\n [289]  2 NA  1  1  3  2  3  3  1 NA  1  4  2  1  1  3  2  1  2  3  1 NA  2  3\n [313]  3  2  1  2  3  5  5  1  2  3  3  1 NA NA  1  2  4 NA  2  1  1  1  3  2\n [337]  1  1  3  4 NA  1  2  1  1  3  3 NA  1  1  3  5  3  2  3  4  1  4  3  1\n [361] NA  2  1  2  2  1  2  2  6  1  2  4  5 NA  3  4  2  1  1  4  2  1  1  1\n [385]  1  2  1  4  4  1  3 NA  3  3 NA  2 NA  1  2  1  1  4  2  1  4  4 NA  1\n [409]  2 NA  3  2  2  2  1  4  3  6  1  2  3  1  3  2  2  2  1  1  3  2  1  1\n [433]  1  3  2  2 NA  4  4  4  1  1 NA  4  3 NA  1  3  1  3  2  4  2  2  2  3\n [457]  2  1  4  3 NA  1  4  3  1  3  2 NA  3 NA  1  3  1  4  1  1  1  2  4  3\n [481]  1  2  2  2  3  2  3  1  1 NA  3  2  1  1  2 NA  2  2  2  3  3  1  1  2\n [505] NA  1  2  1  1  3  3  1  3  1  1  1  1  1  2  5  1  1  2  2  1  1 NA  1\n [529]  4  1  2  4  1  3  2 NA  1  1 NA  2  1  1  4  2  3  3  1  5  3  1  1  2\n [553] NA  1  1  3  1  3  2  4 NA  2  3  2  1  2  1  1  1  2  2  3  1  5  2 NA\n [577]  2 NA  3  2  2  2  1  5  3  2  3  1 NA  3  1  2  2  2  1  2  2  4 NA  6\n [601]  1  2 NA  1  1  2  2  3 NA  3  2  3  3  4  2 NA  2 NA  4 NA  1  1  2  2\n [625]  3  1  1  1  3 NA  2  5 NA  7  1 NA  4  3  3  1 NA  1  1  1  1  3  2  4\n [649]  2  2  3 NA NA  1  4  3  2  2  2  3  2  4  2  2  4 NA NA NA  6  3  3  1\n [673]  4  4  2  1 NA  1  6 NA  3  3  2  1  1  6 NA  1  5  1 NA  2  6  2 NA  4\n [697]  1  3  1  2 NA  1  1  3  1  2  4  2  1  3  2  4  3  2  2  1  1  5  6  4\n [721]  2  2  2  2  4 NA  1  2  2  2  2  4  5 NA NA NA  4  3  3  3  2  4  2  4\n [745] NA NA NA NA  2  1 NA  2  4  3  2 NA  2  3  1  3  4 NA  1  2  1  2 NA  3\n [769]  1  2  1  2  1  2  1  2  2  2  2  1  1  3  3  1  3  4  3 NA NA  4  2  3\n [793]  2  1  3  2  4  2  2  3  1  2  4  3  3  4 NA  1  4  2  1  1  1  3  1  5\n [817]  2  2  4  2 NA  1  3  1  2 NA  1  2  1  2  1 NA  1  3  2  3  2 NA  2  1\n [841]  4  2 NA NA NA  2  4  2 NA NA  3  1 NA  5  5  2  2  2 NA  2  1  3  1  3\n [865]  2  4  2  4 NA  4  1  2  3  2  3  3  2  3  2  2  2  1  3  2  4  2 NA  3\n [889]  3  2  2 NA NA  3  2  1  2  4  1  1  1  1  4  3  2 NA  3  2 NA  1 NA  3\n [913]  2  1  1  1  2 NA  2  2  3  3  2 NA NA  4  5  2  2  2  1  2  3  1  3  3\n [937]  4  3 NA  1  1  1 NA  4  3  5  1  1  2 NA  2  2  2  2  5  2  2  3  1  2\n [961]  3 NA  1  2 NA NA  2 NA  3  1  1  2  5  3  5  1  1  4 NA  2  1  3  1  1\n [985]  2  4  3  3  3 NA  1  1  2  2  1  1  2  2 NA  2\n\nna_count &lt;- sum(is.na(na_example))\nna_positions &lt;- which(is.na(na_example), arr.ind = TRUE)\n\nprint(na_count)\n\n[1] 145\n\nprint(na_positions)\n\n  [1]  12  17  27  50  51  52  59  65  66  68  91 117 125 126 127 128 139 140\n [19] 141 142 153 158 168 169 172 179 189 190 203 205 207 208 212 214 237 241\n [37] 243 244 253 257 265 267 269 279 282 287 290 298 310 325 326 330 341 348\n [55] 361 374 392 395 397 407 410 437 443 446 461 468 470 490 496 505 527 536\n [73] 539 553 561 576 578 589 599 603 609 616 618 620 630 633 636 641 652 653\n [91] 666 667 668 677 680 687 691 695 701 726 734 735 736 745 746 747 748 751\n[109] 756 762 767 788 789 807 821 826 832 838 843 844 845 849 850 853 859 869\n[127] 887 892 893 906 909 911 918 924 925 939 943 950 962 965 966 968 979 990\n[145] 999\n\nmean_original &lt;- mean(na_example, na.rm = TRUE)\nsd_original &lt;- sd(na_example, na.rm = TRUE)\n\nprint(mean_original)\n\n[1] 2.301754\n\nprint(sd_original)\n\n[1] 1.22338\n\nna_example_version1 &lt;- na_example\nna_example_version1[is.na(na_example_version1)] &lt;- median(na_example_version1, na.rm = TRUE)\n\nna_example_version2 &lt;- na_example\nnon_na_values &lt;- na_example[!is.na(na_example)]\nset.seed(123)\nna_example_version2[is.na(na_example_version2)] &lt;- sample(non_na_values, size = sum(is.na(na_example_version2)), replace = TRUE)\n\nmean_version1 &lt;- mean(na_example_version1, na.rm = TRUE)\nsd_version1 &lt;- sd(na_example_version1, na.rm = TRUE)\n\nmean_version2 &lt;- mean(na_example_version2, na.rm = TRUE)\nsd_version2 &lt;- sd(na_example_version2, na.rm = TRUE)\n\nprint(mean_version1)\n\n[1] 2.258\n\nprint(sd_version1)\n\n[1] 1.136102\n\nprint(mean_version2)\n\n[1] 2.286\n\nprint(sd_version2)\n\n[1] 1.213951\n\n\nIn both versions where we imputed the missing data, an improvement in the standard deviation was observed. However, we found that the first version, where we added the median, provided more consistent results.",
     "crumbs": [
       "Assignment 1"
     ]
+  },
+  {
+    "objectID": "project.html",
+    "href": "project.html",
+    "title": "Üniversite Sayısının İstihdam ve İşsizliğe Etkisi",
+    "section": "",
+    "text": "Proje sayfamıza hoş geldiniz!\nTuncay Özkardeş ve İzzet Can Özbaş olarak yürüttüğümüz bu projede; yıllara göre istihdam sayısı, yıllara göre mezun verebilecek üniversite sayısı son olarak ise yıllara ve eğitim durumuna göre işsizlik oranı istatistikleri ile bazı bulgular yakalamaya çalışacağız.\nGüncellemeler için takipte kalın."
+  },
+  {
+    "objectID": "project.html#veri-kaynağı",
+    "href": "project.html#veri-kaynağı",
+    "title": "Üniversite Sayısının İstihdam ve İşsizliğe Etkisi",
+    "section": "2.1 Veri Kaynağı",
+    "text": "2.1 Veri Kaynağı\nhttps://data.tuik.gov.tr/ adresinden işsizlik ve istihdam verilerini topladık.\nhttps://istatistik.yok.gov.tr/ adresinden üniversiteler hakkında genel bilgiler veri tabanına ulaştık."
+  },
+  {
+    "objectID": "project.html#veri-hakkında-genel-bilgiler",
+    "href": "project.html#veri-hakkında-genel-bilgiler",
+    "title": "Üniversite Sayısının İstihdam ve İşsizliğe Etkisi",
+    "section": "2.2 Veri Hakkında Genel Bilgiler",
+    "text": "2.2 Veri Hakkında Genel Bilgiler\nİstihdam ve işsizlik ile ilgili veriler 1988’den beri tutulmaktadır. Üniversiteler hakkında genel bilgiler ise tüm açılmış üniversiteleri kapsamaktadır.\nBu projede kullandığımız ham veriler farklı kaynaklardan geldiği ve doğrudan analiz edilebilir formatta olmadığı için kapsamlı bir ön işleme (preprocessing) süreci uygulanmıştır."
+  },
+  {
+    "objectID": "project.html#bu-verileri-neden-seçtik",
+    "href": "project.html#bu-verileri-neden-seçtik",
+    "title": "Üniversite Sayısının İstihdam ve İşsizliğe Etkisi",
+    "section": "2.3 Bu Verileri Neden Seçtik?",
+    "text": "2.3 Bu Verileri Neden Seçtik?\nUzun yıllardır gelişmekte olan ve işsizlikle boğuşan ülkemizde açılan üniversite sayısının istihdam oranına bir katkı sağlayıp sağlamadığına bakacağız.\nİstihdam artış oranı ile işsizlik artış oranları arasındaki ilişkileri gözlemlemeye çalışacağız.\nÜniversite mezunu işsizlerin üniversite sayısı ile bağlantısını göstermeye çalışacağız."
+  },
+  {
+    "objectID": "project.html#ön-analiz",
+    "href": "project.html#ön-analiz",
+    "title": "Üniversite Sayısının İstihdam ve İşsizliğe Etkisi",
+    "section": "2.4 Ön Analiz",
+    "text": "2.4 Ön Analiz\n\n2.4.1 İstihdam Verisi\nHam veri TÜİK sitesinden yıllık bazda alınmıştır. 1988-1999, 2000-2013 ve 2014-2024 yıllarını kapsayan 3 farklı veri tabanı excel üzerinden direkt birleştirilmiştir.\nVeride “Yıl” ve “İstihdam Sayısı” değişkenleri bulunmaktadır.\nİstihdam sayıları bin kişi cinsinden verildiği için, 1000 ile çarpılarak (excel üzerinden yapıldı) gerçek kişi sayılarına dönüştürülmüştür.\nSütun isimleri Türkçe karakter içermeyecek şekilde ayarlanmıştır.\n\n\n2.4.2 İşsizlik Verisi\nHam veri TÜİK’ten eğitim durumuna ve yıllara göre işsizlik oranları şeklinde alınmıştır.\nİşsizlik verisinde yaş gruplarına göre olan kayıtlar çıkarılmış, sadece eğitim durumuna göre kayıtlar alınmıştır. Sütun adları standartlaştırılmıştır (örneğin: “İlkokul”, “Ortaokul”, “Üniversite”).\nYıl bilgisi eksik veya farklı kodlanmış olan satırlar temizlenmiştir. (excel üzerinden yapıldı)\nData long forma çevrilmiştir. Detaylı form açıklamasına 2.5 başlığında görebilirsiniz.\n\n\n2.4.3 Üniversiteler Verisi\nHam veri YÖK Atlas veri tabanından alınmıştır.\nVerideki ilk satır başlık bilgisi olduğu için çıkarılmıştır.\nKuruluş yılı bilgisi Kuruluş Yılı kolonundan alınmıştır.\nÜniversitelerin mezun vermeye 4 yıl sonra başladığı varsayılarak, her üniversite için “Mezun Verebileceği Yıl” = “Kuruluş Yılı” + 4 şeklinde hesap yapılmıştır.\n1988 yılı öncesinde mezun verebilecek üniversiteler ayrıca hesaplanarak 1988 yılına başlangıç değeri olarak eklenmiştir.\n1988–2024 yılları arasındaki yıllık ve kümülatif mezun verebilecek üniversite sayıları hesaplanmıştır."
+  },
+  {
+    "objectID": "project.html#veriyi-kullanıma-hazır-hale-getirme",
+    "href": "project.html#veriyi-kullanıma-hazır-hale-getirme",
+    "title": "Üniversite Sayısının İstihdam ve İşsizliğe Etkisi",
+    "section": "2.5 Veriyi Kullanıma Hazır Hale Getirme",
+    "text": "2.5 Veriyi Kullanıma Hazır Hale Getirme\nÖncelikle aşağıdaki gibi paketleri yüklemeli ve ilgili kütüphaneleri çağırmalıyız.\n\n#install.packages(\"readxl\")\n#install.packages(\"dplyr\")\n#install.packages(\"DT\")\n#install.packages(\"htmltools\")\n#yukarıdakiler kurulu değilse kurmalısın\n\nlibrary(readxl)\nlibrary(dplyr)\nlibrary(ggplot2)\nlibrary(scales)\nlibrary(tidyr)\nlibrary(knitr)\nlibrary(DT)\n\nProjemizin içine açtığımız Project_Data isimli klasörün içine excel dosyalarımızı atıp bunları R üzerinden görelim.\n\nistihdam &lt;- istihdam &lt;- read_excel(\"Project_Data/Istihdam.xlsx\")\nissizlik &lt;- read_excel(\"Project_Data/IssizlikOranlari.xlsx\")\nuniversiteler_raw &lt;- read_excel(\"Project_Data/Universiteler.xlsx\",skip = 1)\n\ndatatable(istihdam)\n\n\n\n\ndatatable(issizlik)\n\n\n\n\ndatatable(universiteler_raw)\n\n\n\n\n\nÜniversite verisinde ilk satırı (başlığı) atalım. 2. Sütun ismini Kurulus_Yili olarak değiştirelim. Daha sonra gg.aa.yy formatındaki tarihin sadece yıl kısmını alalım. Son olarak mezun verebileceği yılları yan sütuna kaydedelim. Ayrıca en üstteki satır başlık olduğu için onu da yukarıda skip=1 diyerek atladık.\n\nuniversiteler &lt;- universiteler_raw %&gt;%\n  select(Kurulus_Yili) %&gt;%\n  mutate(\n    Kurulus_Yili = as.numeric(substr(Kurulus_Yili, 7, 10)),  # Sadece yıl kısmını çekiyoruz (2010 gibi)\n    Mezun_Verebilecegi_Yil = Kurulus_Yili + 4\n  )\n\ndatatable(universiteler)\n\n\n\n\n\n1988’den önce mezun verebilecek durumdaki üniversiteleri bulmalıyız. Çünkü, 1988 den ihtibaren kümülatif ilerleyeceğiz. Amacımız bir yıldaki mezun verebilecek üniversite sayısını görebilmek.\n\n# 1. 1988'den önce mezun verebilecek üniversite sayısını hesaplayalım\nilk_toplam &lt;- universiteler %&gt;%\n  filter(Mezun_Verebilecegi_Yil &lt; 1988) %&gt;%\n  summarise(toplam = n()) %&gt;%\n  pull(toplam)\n\nprint(ilk_toplam)\n\n[1] 27\n\n\n1988’den sonra yıllık olarak mezun verebilecek üniversite sayısını hesaplayalım.\n\nuni_sayisi &lt;- universiteler %&gt;%\n  filter(Mezun_Verebilecegi_Yil &gt;= 1988, Mezun_Verebilecegi_Yil &lt;= 2024) %&gt;%\n  group_by(Mezun_Verebilecegi_Yil) %&gt;%\n  summarise(mezun_verebilecek_uni_sayisi = n()) %&gt;%\n  rename(Yil = Mezun_Verebilecegi_Yil) %&gt;%\n  arrange(Yil)\n\n#1988 yili yoksa manuel olarak eklemeliyiz (grafiklerimiz bu tarihten ihtibaren baslayacak)\nif (!1988 %in% uni_sayisi$Yil) {\n  uni_sayisi &lt;- bind_rows(\n    tibble(Yil = 1988, mezun_verebilecek_uni_sayisi = 0), # 1988'de hiç yeni mezun yoksa bile sıfır olarak ekle\n    uni_sayisi\n  ) %&gt;%\n    arrange(Yil)\n}\n\n#1988 yılındaki üniversite sayısına 1988 ve öncesindeki mezun verebilecek üniversite sayısını eklemeliyiz.\n\nuni_sayisi &lt;- uni_sayisi %&gt;%\n  mutate(mezun_verebilecek_uni_sayisi = ifelse(Yil == 1988, mezun_verebilecek_uni_sayisi + ilk_toplam, mezun_verebilecek_uni_sayisi))\n\n#Kümülatif olarak artacağı için cusum kullanacağız.\nuni_sayisi &lt;- uni_sayisi %&gt;%\n  mutate(kumulatif_mezun_verebilecek_uni_sayisi = cumsum(mezun_verebilecek_uni_sayisi))\n\ndatatable(uni_sayisi)\n\n\n\n\n\nUfak bir grafik ile mezun verebilecek üniversite sayılarını görelim.\n\np &lt;- ggplot(uni_sayisi, aes(x = Yil, y = kumulatif_mezun_verebilecek_uni_sayisi)) +\n  geom_line(color = \"blue\", linewidth = 1.2) +  # Çizgi mavi\n  geom_point(color = \"blue\", size = 2) +  # Noktalar mavi\n  scale_x_continuous(breaks = seq(1988, 2024, by = 5)) +  # 5'er yıllık aralıklar x ekseninde\n  scale_y_continuous(breaks = seq(0, 220, by = 20)) +    # y ekseninde 20'şer aralık\n  labs(\n    title = \"Yillara Gore Kumulatif Mezun Verebilecek Universite Sayisi\",\n    x = \"Yil\",\n    y = \"Kumulatif Mezun Verebilecek Universite Sayisi\"\n  ) +\n  theme_minimal() +\n  theme(\n    panel.grid.major.x = element_line(color = \"grey70\", linetype = \"dashed\"),  # X ekseni gridini kesik yap\n    panel.grid.major.y = element_line(color = \"grey70\", linetype = \"dashed\"),  # Y ekseni gridini kesik yap\n    panel.grid.minor = element_blank(),  # Minor gridleri kaldır\n    axis.text = element_text(size = 10),\n    axis.title = element_text(size = 12),\n    plot.title = element_text(size = 14, hjust = 0.5)  # Başlığı ortala\n  )\n\nprint(p)\n\n\n\n\n\n\n\n\nGörüldüğü üzere 88 yılına kadar mezun verebilen 27 üniversite bulunuyor. 2009 ve sonrası ise fazla bir artış söz konusu.\nŞimdi de yıllara göre istihdam sayısında bir göz atalım.\n\nggplot(istihdam, aes(x = Yil, y = Istihdam_Sayisi)) +\n  geom_line(color = \"blue\", linewidth = 1.2) +\n  geom_point(color = \"blue\", size = 2) +\n  scale_x_continuous(breaks = seq(1988, 2024, by = 5)) +\n  scale_y_continuous(breaks = seq(0, 40000000, by = 5000000),\n                     labels = label_comma()) +  # burada değişiklik yaptık!\n  labs(\n    title = \"Yillara Gore Istihdam Sayisi\",\n    x = \"Yil\",\n    y = \"Istihdam_Sayisi\"\n  ) +\n  theme_minimal() +\n  theme(\n    panel.grid.major.x = element_line(color = \"grey70\", linetype = \"dashed\"),\n    panel.grid.major.y = element_line(color = \"grey70\", linetype = \"dashed\"),\n    panel.grid.minor = element_blank(),\n    axis.text = element_text(size = 10),\n    axis.title = element_text(size = 12),\n    plot.title = element_text(size = 14, hjust = 0.5)\n  )\n\n\n\n\n\n\n\n\n2018’den sonraki koronavirüs dönemindeki düşüşü gördünüz mü!\nŞimdi Tidyr kullanarak işsizlik datasını long hale çevirelim ve normal/long hani arasındaki farkları görelim.\n\nissizlik_long &lt;- issizlik %&gt;%\n  pivot_longer(\n    cols = -Yil,\n    names_to = \"Egitim_Durumu\",\n    values_to = \"Issizlik_Orani\"\n  )\ndatatable(issizlik)\n\n\n\n\ndatatable(issizlik_long)\n\n\n\n\n\nLong data üzerinden tüm veriler için rahatça grafik çizebiliriz.\n\nggplot(issizlik_long, aes(x = Yil, y = Issizlik_Orani, color = Egitim_Durumu)) +\n  geom_line(linewidth = 1.2) + \n  geom_point(size = 2) +\n  scale_x_continuous(breaks = seq(1988, 2024, by = 5)) +\n  scale_y_continuous(limits = c(0, 30)) +\n  labs(\n    title = \"Yillara Gore Egitim Durumuna Bagli Issizlik Oranlari\",\n    x = \"Yil\",\n    y = \"Issizlik Orani (%)\",\n    color = \"Egitim Durumu\"  # Legend başlığı\n  ) +\n  theme_minimal() +\n  theme(\n    panel.grid.major.x = element_line(color = \"grey80\", linetype = \"dashed\"),\n    panel.grid.major.y = element_line(color = \"grey80\", linetype = \"dashed\"),\n    panel.grid.minor = element_blank(),\n    legend.position = \"bottom\",  # Legend aşağıda\n    legend.title = element_text(size = 11),\n    legend.text = element_text(size = 10),\n    plot.title = element_text(size = 14, hjust = 0.5)\n  )\n\n\n\n\n\n\n\n\nGöründüğü üzere üniversite okuyanların işsizlik oranı okuma yazma bilmeyenlerin oranına göre daha fazla! Devamına final projede detaylı olarak değineceğiz.\nSon olarak verilerimizi Rdata formatında saklayalım.\n\nsave(istihdam, issizlik, issizlik_long, uni_sayisi, file = \"Project_Data/son_veriler.RData\")\n\nRData dosyalarını buradan indirebilirsiniz"
+  },
+  {
+    "objectID": "project.html#exploratory-data-analysis",
+    "href": "project.html#exploratory-data-analysis",
+    "title": "Üniversite Sayısının İstihdam ve İşsizliğe Etkisi",
+    "section": "3.1 Exploratory Data Analysis",
+    "text": "3.1 Exploratory Data Analysis\nxxxxxx"
+  },
+  {
+    "objectID": "project.html#trend-analysis",
+    "href": "project.html#trend-analysis",
+    "title": "Üniversite Sayısının İstihdam ve İşsizliğe Etkisi",
+    "section": "3.2 Trend Analysis",
+    "text": "3.2 Trend Analysis\nxxxxxx"
+  },
+  {
+    "objectID": "project.html#model-fitting",
+    "href": "project.html#model-fitting",
+    "title": "Üniversite Sayısının İstihdam ve İşsizliğe Etkisi",
+    "section": "3.3 Model Fitting",
+    "text": "3.3 Model Fitting\nxxxxxx"
+  },
+  {
+    "objectID": "project.html#results",
+    "href": "project.html#results",
+    "title": "Üniversite Sayısının İstihdam ve İşsizliğe Etkisi",
+    "section": "3.4 Results",
+    "text": "3.4 Results\nxxxxxx"
+  },
+  {
+    "objectID": "posts.html",
+    "href": "posts.html",
+    "title": "My Blog",
+    "section": "",
+    "text": "This page is under construction.\n\n\n\n Back to top"
   }
 ]
